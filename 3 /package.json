@@ -1,0 +1,17 @@
+{
+  "name": "reactbasic",
+  "version": "1.0.0",
+  "description": "\"Learning React\"",
+  "license": "ISC",
+  "author": "\"Aman Raj Verma\"",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.7",
+    "react-dom": " ^19.2.7"
+  }
+}
+ 

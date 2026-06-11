@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  justify-content: space-between;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.images {
+  position: relative;
+  top: 3px;
+  left: 60px;
+}
+
+.option {
+  padding-top: 30px;
+}
+
+.but, .btn {
+  background-color: #fff;
+  border: none;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.searchbar {
+  width: 400px;
+  height: 30px;
+  position: relative;
+  top: 30px;
+}
+
+.profile {
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.middle {
+  background-color: bisque;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 50px;
+  display: flex;
+}
+
+.card {
+  color: #fff;
+  background-color: #03781e;
+  border: 2px solid #000;
+  margin: 5px;
+  padding: 2px;
+}
+
+button {
+  color: #010303;
+  background-color: #e7b6b6;
+  height: 50px;
+}
+/*# sourceMappingURL=5 Myntra Project.3a01df49.css.map */
