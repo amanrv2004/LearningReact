@@ -16,9 +16,7 @@ import ReactDOM from "react-dom/client";
 //             <h1>Money is {money.current}</h1>
 //             <button onClick={() => {
 //                 money.current = money.current + 1;
-//                 console.log(money.current);
 //             }}>Increment</button>
-
 //         </>
 //     )
 // }
