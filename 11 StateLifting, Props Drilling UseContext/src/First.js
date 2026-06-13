@@ -20,3 +20,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App />)
 
 
 
+
+
+// First create a Create Context
+// Provide data ko uske andar : Descendent - CreatedContext.Provider value={}
+// Consume the context - const {value} = useContext(CreatedContext);
+
+
+
