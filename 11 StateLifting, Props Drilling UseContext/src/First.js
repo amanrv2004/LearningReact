@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import Second from "./Second";
 import CountContext from "./context/Count";
 
-
 function App() {
     const [count, setCount] = useState(0);
     return (
