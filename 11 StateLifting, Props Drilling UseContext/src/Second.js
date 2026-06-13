@@ -1,9 +1,9 @@
 import Third  from "./Third";
 import {useContext} from 'react';
-import GlobalContext from "./context/Global";
+import CountContext from "./context/Count";
 
 export default function Second({count,setCount}){
-    const data = useContext(GlobalContext)
+    const data = useContext(CountContext)
     return (
         <>
         <h1>{data} : Kaise ho app log </h1>
