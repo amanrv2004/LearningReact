@@ -1,6 +1,7 @@
 import Third  from "./Third";
+import {useContext} from 'react';
 import GlobalContext from "./context/Global";
-import {useContext} from 'react'
+
 export default function Second({count,setCount}){
     const data = useContext(GlobalContext)
     return (
