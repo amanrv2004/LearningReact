@@ -21,6 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App />)
 
 
 
+//useContext is a alter of props passing in Descendent
+
 
 // First create a Create Context
 // Provide data ko uske andar : Descendent - CreatedContext.Provider value={}
