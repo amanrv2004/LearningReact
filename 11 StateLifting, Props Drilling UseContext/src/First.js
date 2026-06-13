@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import Second from "./src/second";
+import Second from "./Second";
 
 function App(){
     const [count,setCount] = useState(3);
