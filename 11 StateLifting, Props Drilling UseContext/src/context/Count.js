@@ -1,4 +1,4 @@
 import { createContext } from "react";
-const CountContext = createContext("Aman");
+const CountContext = createContext({});
 
 export default CountContext;

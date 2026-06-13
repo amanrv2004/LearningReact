@@ -1,12 +1,13 @@
 import CountContext from "./context/Count";
 import {useContext} from 'react'
-export default function Second({count,setCount}){
+export default function Second(){
     
-   const data = useContext(CountContext);
+   const {count,setCount} = useContext(CountContext);
     return (
         <>
  
-        <h1>Ham Thik hai, {data} </h1>
+        <h1>Ham Thik hai {count} </h1>
+        <button onClick={()=>setCount(count+1)}>Increment</button>
 
         </>
         
