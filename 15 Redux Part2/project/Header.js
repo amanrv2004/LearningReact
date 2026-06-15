@@ -3,12 +3,12 @@
 
 export default function Header() {
 
-
+    const count = 0;
     return (
         <>
             <div style={{display:"flex",justifyContent:"center",gap:"30px"}}>
                 <h1>Swiggy</h1>
-                <h2>Card: {count}</h2>
+                <h2>Cart: {count}</h2>
             </div>
         </>
     )

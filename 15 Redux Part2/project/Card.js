@@ -56,9 +56,17 @@ export default function Card() {
     
 
     return(
-        <>
-        
-        </>
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            {foodItems.map((value)=>{
+                return(
+                    <div key={value.id}>
+                        <h1>{value.food}</h1>
+                        <h1>{value.Price}</h1>
+                        <button>Add</button>
+                    </div>
+                )
+            })}
+        </div>
     )
 }
 

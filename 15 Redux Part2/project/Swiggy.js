@@ -9,10 +9,10 @@ function App() {
 
     return (
         <>
-            <Provider >
+            
                 <Header />
                 <Card />
-            </Provider>
+
         </>
     )
 }
