@@ -4,8 +4,8 @@ const reactSlicer =  createSlice({
     name:"slice1",
     initialState:{count:0},
     reducers:{
-        Increment:(state)=>{state.count = state.count + 1},
-        Decrement:(state)=>{state.count = state.count - 1},
+        Increment:(state)=>{state.count++},
+        Decrement:(state)=>{state.count--},
         Reset:(state)=>{state.count = 0}
     }
 });
