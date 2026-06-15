@@ -9,6 +9,7 @@ export default function Nav(){
                     <Link to="/Contact">Contact</Link>
                     <Link to="/Dashboard">Dashboard</Link>
                     <Link to="/Details">Details</Link>
+                    <Link to="/Github">Github</Link>
         </nav>
         </>
     )
