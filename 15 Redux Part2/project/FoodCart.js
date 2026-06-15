@@ -1,9 +1,8 @@
 import { useState } from "react";
 
 
-export default function FoodCart({value}) {
+export default function FoodCart({ value }) {
     const [inCart, setInCart] = useState(false);
-
     function handleClick() {
         if (inCart) {
             setInCart(false);
@@ -12,12 +11,11 @@ export default function FoodCart({value}) {
             setInCart(true);
         }
     }
-
     return (
         <>
-                <h1>{value.food}</h1>
-                <h1>{value.Price}</h1>
-                <button onClick={handleClick}>{inCart ? "Remove" : "Add"}</button>
+            <h1>{value.food}</h1>
+            <h1>{value.Price}</h1>
+            <button onClick={handleClick}>{inCart ? "Remove" : "Add"}</button>
         </>
     )
 }

@@ -64,7 +64,7 @@ export default function Card() {
                 return (
 
                     <div key={value.id}>
-                        <FoodCart value = {value}/>
+                        <FoodCart value={value} />
                     </div>
                 )
             })}
