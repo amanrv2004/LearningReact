@@ -56,7 +56,7 @@ export default function Card() {
     
 
     return(
-        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexWrap:"wrap",gap:"20px"}}>
             {foodItems.map((value)=>{
                 return(
                     <div key={value.id}>
