@@ -25,3 +25,7 @@ export default function FoodCart({ value }) {
         </>
     )
 }
+
+
+// Add : inCart  = false
+// Remove : inCart = true
