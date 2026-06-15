@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useDispatch, useSelector} from 'react-redux';
+import { Increment,Decrement,Reset } from "./slicer1";
 
 export default function Counting(){
     
