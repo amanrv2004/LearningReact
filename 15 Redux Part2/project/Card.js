@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 const foodItems =[
     {
@@ -12,22 +13,22 @@ const foodItems =[
     },
     {
         id:3,
-        food:"Cold Coffee",
+        food:"Coffee",
         Price:"139"
     },
     {
         id:4,
-        food:"Cheese Garlic Bread",
+        food:"Momo",
         Price:"259"
     },
     {
         id:5,
-        food:"Brust Pizza",
+        food:"Pasta",
         Price:"379"
     },
     {
         id:6,
-        food:"Double Cheese Pizza",
+        food:"kebab",
         Price:"499"
     },
     {
@@ -37,29 +38,30 @@ const foodItems =[
     },
     {
         id:8,
-        food:"Cheese Balls",
+        food:"Panner",
         Price:"99"
     },
     {
         id:9,
-        food:"Veg Taco",
+        food:"Taco",
         Price:"229"
     },
     {
         id:10,
-        food:"Mini Cake",
-        Price:"149"
+        food:"Cake",
+        Price:"399"
     },
 ];
 
 export default function Card() {
-    
+     
+    const [isCart,setInCart] = useState(false)
 
     return(
         <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexWrap:"wrap",gap:"20px"}}>
             {foodItems.map((value)=>{
                 return(
-                    <div key={value.id}>
+                    <div key={value.id} style={{border:"2px solid black" ,margin:"10px",padding:"10px"}}>
                         <h1>{value.food}</h1>
                         <h1>{value.Price}</h1>
                         <button>Add</button>
