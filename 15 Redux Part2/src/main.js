@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Counting from "./Counting";
 import { Provider } from "react-redux";
 import stores from "./Stores";
+import CustomCounter from "./CustomCounter";
 
 function App(){
     
@@ -10,6 +11,10 @@ function App(){
         <>
            <Provider store={stores}>
            <Counting></Counting>
+           <br></br>
+           <br></br>
+           <br></br>
+           <CustomCounter/>
            </Provider>
         </>
     )
