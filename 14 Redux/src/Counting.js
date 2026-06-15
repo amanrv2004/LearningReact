@@ -6,6 +6,11 @@ export default function Counting(){
     
     const count = useSelector((state)=>state.slice1.count);  // gives the global state
     const dispatch = useDispatch();
+
+    console.log(Increment());
+    console.log(Decrement());
+    console.log(Reset());
+
     return(
         <>
             <h1>Count is {count}</h1>
