@@ -25,6 +25,8 @@ function App() {
                         <Route path="Hello" element={<Hello />}></Route>
                         <Route path="Hi" element={<Hi />}></Route>
                     </Route>
+
+                    {/* Github Dyanamic Routes */}
                     <Route path="/Github/:name" element={<Github/>}></Route>
                 </Routes>
             </BrowserRouter>

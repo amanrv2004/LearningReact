@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect ,useState } from "react";
 import { useParams } from "react-router"
 
 
@@ -8,21 +8,29 @@ export default  function Github(){
     // console.log(data.name);
 
     const {name} = useParams();
-    const [profile,setProfile] = useState(null);
-    async function fetchuser() {
-        const resopnse = await fetch(`http://localhost:1234/Github/${name}`)
-        const data = await resopnse.json();
-
+    const [Profile,setProfile] = useState(null);
+    async function fetchuser(){
+        const response = await fetch(`https://api.github.com/users/${name}`);
+        const data = await response.json();
+        setProfile(data);
     }
     useEffect(()=>{
         fetchuser();
-    },)
+    },[name]);
+
     return(
         <>
         <h1>My Github Profile</h1>
 
         {/* Display users Data */}
-        <h2>{name}</h2>
+        <div>
+            <img src={Profile?.avatar_url} alt="Profile" />
+            <h2>User ID : {Profile?.login}</h2>
+            <h1>{Profile?.name}</h1>
+            <h3>{Profile?.bio}</h3>
+            <a href={Profile?.url}>Open Full Github Profile</a>
+            <a href={Profile?.blog}>Open Company Website</a>
+        </div>
         </>
     )
 }
