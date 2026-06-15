@@ -4,7 +4,7 @@ import { Increment,Decrement,Reset } from "./slicer1";
 
 export default function Counting(){
     
-    const count = useSelector((state)=>state.slice1.count);  // gives the globa; state
+    const count = useSelector((state)=>state.slice1.count);  // gives the global state
     const dispatch = useDispatch();
     return(
         <>
