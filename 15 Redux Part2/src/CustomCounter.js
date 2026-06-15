@@ -9,6 +9,7 @@ export default function CustomCounter() {
     const dispatch = useDispatch();
     function handleClick(){
         dispatch(CustomIncreaser(Number(number)));
+        setNumber("");
     }
     return (
         <>
