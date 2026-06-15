@@ -7,7 +7,7 @@ const FoodSlicer=createSlice({
     initialState:{count:0},
     reducers:{
         addItems:(state)=>{state.count++},
-        removeItems:(state)=>{state.count--};
+        removeItems:(state)=>{state.count--}
     }
 })
 
