@@ -19,6 +19,8 @@ function Body() {
   // Custom Hook useFetch is used here.
   const {generateProfile,numberOfProfile,setnumberOfProfile,Profile} = useFetch();
 
+
+
   return (
     <>
       <div className="but">
