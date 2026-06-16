@@ -1,9 +1,16 @@
-
-
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
+
+
+// {type:'coin/fetch/pending', payload: undefined}
+// {type:'coin/fetch/fullfiled', payload: data}
+// {type:'coin/fetch/rejected', payload: undefined}
+
+
+
+
 const FetchData = createAsyncThunk(
-    //Action : type , payload
+    //Action : {type , payload}
    
     'Coin/fetch',
     
