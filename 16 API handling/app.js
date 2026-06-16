@@ -10,9 +10,9 @@ function App(){
     
     return (
         <>
-           <Provide store={stores}>
+           <Provider store={stores}>
                 <CoinCreate/>
-           </Provide>
+           </Provider>
         </>
     )
 }
