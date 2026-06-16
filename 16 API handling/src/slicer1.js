@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk ,createSlice } from "@reduxjs/toolkit";
 
 
 
@@ -28,3 +28,33 @@ const FetchData = createAsyncThunk(
 
 
 )
+
+
+
+const slicer1 = createSlice({
+    name:"slice1",
+    initialState:{data:[],loading:false,error:null},
+    reducers:{},
+    extraReducers:(builder)=>{
+        builder
+        .addCase(FetchData.pending,(state)=>{
+            state.loading = true;
+            state.error = null;
+        })
+        .addCase(FetchData.fulfilled,(state,action)=>{
+            state.data = action.payload;
+            state.loading= false;
+        })
+        .addCase(FetchData.rejected,(state,action)=>{
+            state.error = action.payload;
+            state.loadingr = false;
+        })
+    }
+})
+
+//type:'coin/fetch/pending'
+//type:'coin/fetch/fulfilled'
+//type:'coin/fetch/rejected'
+
+export default slicer1.reducer;
+export {FetchData};
