@@ -3,14 +3,27 @@ import ReactDOM from 'react-dom/client';
 import Add from "./Add";
 
 
-function App(){
+function App() {
 
 
-const [language,setLanguage] = useState(['TS','JS','JAVA'])
-    
+    const [language, setLanguage] = useState(['TS', 'JS', 'JAVA']);
+
+    function handleClick(){
+        setLanguage(['C++',...language])
+    }
+
     return (
 
         <>
+            <div>
+                {
+                    language.map((value, index) => <Add key={index} value={value} />)
+                }
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <button onClick={handleClick}>Add Language</button>
         </>
     )
 }
