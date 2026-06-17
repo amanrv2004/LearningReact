@@ -8,8 +8,8 @@ function App(){
     return (
         <>
            {
-            arr.map((value,index)=><Add key={index} />)
-           }
+            arr.map((value,index)=><Add key={index} />)      //key ={index} mat rakho index sirf index dega 
+            }
         </>
     )
 }
