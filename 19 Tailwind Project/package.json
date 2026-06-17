@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "parcel": "^2.16.4"
+    "@tailwindcss/postcss": "^4.3.1",
+    "parcel": "^2.16.4",
+    "tailwindcss": "^4.3.1"
   }
 }
