@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import Add from "./Add";
-const arr = [1,2,3,4]
+const arr = [1,2,3,4,2,5]
 
 function App(){
     
     return (
         <>
            {
-            arr.map((value)=><Add key={value} />)
+            arr.map((value,index)=><Add key={index} />)
            }
         </>
     )
