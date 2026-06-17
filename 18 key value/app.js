@@ -17,7 +17,8 @@ function App() {
         <>
             <div>
                 {
-                    language.map((value, index) => <Add key={index} value={value} />)
+                    // language.map((value, index) => <Add key={index} value={value} />)
+                    language.map((value) => <Add key={value} value={value} />)
                 }
             </div>
             <br/>
