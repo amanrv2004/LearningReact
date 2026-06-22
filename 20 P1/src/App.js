@@ -1,14 +1,15 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
+import Header from "./component/Header";
 
-
-function App(){
-
-    return (
-        <>
-            <h1>Hello Aman</h1>
-        </>
-    )
+function App() {
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
