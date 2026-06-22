@@ -4,11 +4,11 @@ export default function DineCard({ RestData }) {
 
     return (
         <div className="max-w-sm flex-none">
-            <div>
-                <img src={"https://media-assets.swiggy.com/swiggy/image/upload/" +
+            <div className="relative mb-10">
+                <img className="w-80 h-50 object-cover rounded-2xl" src={"https://media-assets.swiggy.com/swiggy/image/upload/" +
                     RestData?.info?.mediaFiles[0]?.url}></img>
-                <p>{RestData?.info?.name}</p>
-                <p>{RestData?.info?.rating?.value}</p>
+                <p className="absolute bottom-2 left-2 text-2xl bold text-white">{RestData?.info?.name}</p>
+                <p className="absolute bottom-2 right-2 text-2xl bold text-white">{RestData?.info?.rating?.value}</p>
             </div>
 
         </div>
