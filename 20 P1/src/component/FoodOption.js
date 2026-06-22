@@ -4,7 +4,7 @@ export default function FoodOption(){
 
     return(
         <>
-            <div className="w-[80%] container mx-auto flex flex-wrap mt-20 gap-5">
+            <div className="w-[80%] mx-auto px-4 grid grid-flow-col auto-cols-max overflow-x-auto gap-5">
                 {
                     imageGridCards.map((foodData)=><FoodCard key={foodData.id} foodData = {foodData}/>)
                 }
