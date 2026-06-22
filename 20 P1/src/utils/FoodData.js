@@ -1,4 +1,4 @@
-const imageGridCards = [{
+export const imageGridCards = [{
         "id": "2568142",
         "imageId": "PC_Mweb/Dosa.png",
         "action": {
