@@ -5,7 +5,7 @@ import FoodOption from "./component/FoodOption";
 import GroceryOption from "./component/GroceryOption";
 import DineOption from "./component/DineOption";
 import Restaurant from "./component/Restaurant";
-
+import {BrowserRouter,Routes,Route} from "react-router";
 
 
 // Header section: Let's build it
