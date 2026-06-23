@@ -19,7 +19,9 @@ export default function Restaurant(){
      fetchData();
     },[])
 
-    // console.log(RestData);
+   if(RestData.length == 0){
+    return <h1 className="h-full font-black text-9xl">Data is Loading ........</h1>
+   }
 
     return (
         <div className="flex flex-wrap w-[80%] mx-auto mt-20 gap-5">
