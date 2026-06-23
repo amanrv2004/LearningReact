@@ -1,6 +1,8 @@
 
 import { useEffect ,useState } from "react";
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import MenuCard from "./MenuCard";
+
 export default function RestaurantMenu(){
     let {id}= useParams();
     const [RestData, setRestData] = useState(null);
@@ -16,11 +18,13 @@ export default function RestaurantMenu(){
            setRestData(filterData);
         }
         fetchData();
-       },[])
+       },[]);
     return (
-        <>
-          <div>{id}</div>
-        </>
+        <div className="w-[80%] mx-auto">
+                {
+                    RestData.map((menuItems)=><MenuCard/>)
+                }
+        </div>
 
     )
 }
