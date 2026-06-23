@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import RestCard from "./RestCard";
+import Shimmer from "./Shimmer";
 
 export default function Restaurant(){
    
@@ -20,7 +21,7 @@ export default function Restaurant(){
     },[])
 
    if(RestData.length == 0){
-    return <h1 className="h-full font-black text-9xl">Data is Loading ........</h1>
+    return <Shimmer/>
    }
 
     return (
