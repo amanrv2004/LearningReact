@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import MenuCard from "./MenuCard";
 
 export default function RestaurantMenu() {
@@ -22,26 +22,15 @@ export default function RestaurantMenu() {
   }, []);
 
 
-  // if (selected === 'veg') {
-  //   return (
-  //     <>
-  //       <h1>Veg Selected</h1>
-  //     </>
-  //   )
-  // }
-
-  // if (selected === 'nonveg') {
-  //   return (
-  //     <>
-  //       <h1>Non - Veg Selected</h1>
-  //     </>
-  //   )
-  // }
-
-
 
   return (
     <>
+
+      <div className="w-[80%] mx-auto mt-20 mb-20">
+        <Link to={`/city/delhi/${id}/search`}>
+          <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
+        </Link>
+      </div>
       <div className="w-[80%] mx-auto mt-20 mb-20">
         <button className={`text-2xl py-2 px-8 mr-2 border rounded-2xl  ${selected === "veg" ? "bg-green-600" : "bg-gray-300"}`} onClick={() => setSelected(selected === 'veg' ? null : 'veg')}>Veg</button>
         <button className={`text-2xl py-2 px-8 mr-2 border rounded-2xl  ${selected === "nonveg" ? "bg-red-600" : "bg-gray-300"}`} onClick={() => setSelected(selected === 'nonveg' ? null : 'nonveg')}>Non Veg</button>
