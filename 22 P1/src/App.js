@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./component/Header";
-import FoodOption from "./component/FoodOption";
-import GroceryOption from "./component/GroceryOption";
-import DineOption from "./component/DineOption";
+import Home from "./component/Home";
 import Restaurant from "./component/Restaurant";
-import {BrowserRouter,Routes,Route} from "react-router";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 // Header section: Let's build it
@@ -14,10 +11,7 @@ function App(){
     
     return(
        <>
-       <Header></Header>
-       <FoodOption></FoodOption>
-       <GroceryOption></GroceryOption>
-       <DineOption></DineOption>
+       <Home/>
        <Restaurant></Restaurant>
        </>
     )
