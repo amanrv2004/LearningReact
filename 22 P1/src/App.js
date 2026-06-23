@@ -5,7 +5,6 @@ import Restaurant from "./component/Restaurant";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-// Header section: Let's build it
 
 function App() {
 
