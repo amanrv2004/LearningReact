@@ -8,6 +8,14 @@ export default function RestCard({restInfo}){
          <div className="w-[95%] mx-auto mt-4">
             <div className="font-bold text-xl ">{restInfo?.info?.name}</div>
          </div>
+
+         <div className="flex gap-3">
+            <span className="text-lg">
+            {restInfo?.info?.avgRating}
+         </span>
+         <span className="text-lg font-semi-bold">{restInfo?.info?.sla?.slaString}</span>
+         </div>
+         
          
        </div>
     )
