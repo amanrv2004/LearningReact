@@ -14,7 +14,7 @@ export default function RestaurantMenu(){
            const data = await response.json();
 
            const tempData = data?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-           const filterData = tempData.filter((items) => 'title' in items?.card?.card);
+           const filterData = tempData?.filter((items) => 'title' in items?.card?.card);
            setRestData(filterData);
         }
         fetchData();
@@ -22,7 +22,7 @@ export default function RestaurantMenu(){
     return (
         <div className="w-[80%] mx-auto mt-20">
           {
-            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card}></MenuCard>)
+            RestData?.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card}></MenuCard>)
           }
         </div>
 
