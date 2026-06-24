@@ -1,7 +1,10 @@
+import { useState } from "react";
 
 
 
 export default function RestInfo({restData}){
+
+    const [count ,setCount]= useState(0);
 
 
     return (
@@ -18,7 +21,16 @@ export default function RestInfo({restData}){
           </div>
           <div className="w-[20%] relative h-42">
             <img className="w-60 h-36 object-cover rounded-3xl" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+restData.imageId}></img>
-            <button className="absolute bottom-1 left-20 rounded-xl text-2xl text-green-600 px-6 py-2 shadow-md border border-white bg-white">ADD</button>
+            {
+              (count === 0)?(<button className="absolute bottom-1 left-20 rounded-xl text-2xl text-green-600 px-6 py-2 shadow-md border border-white bg-white" onClick={() => setCount(1)} >ADD</button>):(
+                <div className="absolute bottom-1 left-20 flex gap-3 text-2xl text-green-600 px-6 py-2 shadow-md border border-white bg-white rounded">
+                  <button onClick={()=>setCount(count-1)}>-</button>
+                  <span>{count}</span>
+                  <button onClick={()=>setCount(count+1)}>+</button>
+                </div>
+              )
+            }
+            
           </div>
         </div>
         <hr className="mb-6 mt-2"></hr>

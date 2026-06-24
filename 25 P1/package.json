@@ -10,12 +10,14 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
     "@tailwindcss/postcss": "^4.3.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "postcss": "^8.5.15",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-redux": "^9.3.0",
     "react-router": "^8.0.1",
     "react-router-dom": "^6.30.4",
     "tailwindcss": "^4.3.1"
