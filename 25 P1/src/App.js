@@ -5,7 +5,7 @@ import Restaurant from "./component/Restaurant";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RestaurantMenu from "./component/RestaurantMenu";
 import SearchFood from "./component/SearchFood";
-
+import SecondaryHome from "./component/SecondaryHome";
 
 function App() {
 
@@ -14,9 +14,12 @@ function App() {
             <BrowserRouter>
                 <Routes >
                         <Route path="/" element={<Home/>}></Route>
+                        <Route element={<SecondaryHome/>}>
                         <Route path="/restaurant" element={<Restaurant/>}></Route>
                         <Route path="/city/delhi/:id" element={<RestaurantMenu/>}></Route>
                         <Route path="/city/delhi/:id/search" element={<SearchFood/>}></Route>
+                        </Route>
+                       
                 </Routes>
             </BrowserRouter>
         </>
